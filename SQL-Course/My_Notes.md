@@ -1,6 +1,9 @@
 # 📘 SQL Study Notes
 **My daily notes, definitions, and code examples.**
 
+Database: PostgreSQL  
+Tool: pgAdmin
+
 ## 📑 Table of Contents (Index)
 1. [Section 1: Setup & Installation](#section-1-setup--installation)
 2. [Section 2: Fundamentals (SELECT, WHERE)](#section-2-fundamentals-select-where)
