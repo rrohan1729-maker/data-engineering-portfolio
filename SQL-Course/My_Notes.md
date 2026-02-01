@@ -25,7 +25,7 @@
 [↑ Back to Top](#sql-study-notes)
 
 ---
-
+Database would be having tables
  ## TABLE in SQL is like a grid
 It has:
 
@@ -65,3 +65,12 @@ Retrieves data from a table.
 ```sql
 SELECT coloumn_name
 FROM table_name;
+
+--Can select multiple coloums
+select coloumn_1, coloumn_2
+from table_1
+
+-- For selecting all the coloumn
+
+Select *
+From table
