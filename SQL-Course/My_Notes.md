@@ -1,89 +1,93 @@
 # 📘 SQL Study Notes
-**My daily notes, definitions, and code examples.**
+**My daily notes, definitions, and code examples**
 
-Database: PostgreSQL  
-Tool: pgAdmin
+**Database:** PostgreSQL  
+**Tool:** pgAdmin
+
+---
 
 ## 📑 Table of Contents (Index)
 1. [Section 1: Setup & Installation](#section-1-setup--installation)
-2. [Section 2: Fundamentals (SELECT, WHERE, DISTINCT, ORDER BY, LIMIT, BETWEEN, IN, LIKE, ILIKE)](#section-2-fundamentals)
+2. [Section 2: Fundamentals](#section-2-fundamentals-select-where-distinct-order-by-limit-between-in-like-ilike)
 3. [Section 3: Group By & Aggregations](#section-3-group-by--aggregations)
-4. [Section 4: JOINS (Inner, Left, Right, Outer)](#section-4-joins-inner-left-right-outer)
-5. [Section 5: Advanced Commands (Timestamps, Math)](#section-5-advanced-commands-timestamps-math)
+4. [Section 4: JOINS](#section-4-joins-inner-left-right-outer)
+5. [Section 5: Advanced Commands](#section-5-advanced-commands-timestamps-math)
 6. [Section 6: Assessment Test 2](#section-6-assessment-test-2)
 7. [Section 7: Creating Databases](#section-7-creating-databases)
 8. [Section 8: Creating Tables & Data Types](#section-8-creating-tables--data-types)
-9. [Section 9: Conditional Expressions (CASE, COALESCE)](#section-9-conditional-expressions-case-coalesce)
-10. [Section 10: Advanced SQL (Window Functions & CTEs)](#section-10-advanced-sql-window-functions--ctes)
+9. [Section 9: Conditional Expressions](#section-9-conditional-expressions-case-coalesce)
+10. [Section 10: Advanced SQL](#section-10-advanced-sql-window-functions--ctes)
 11. [Section 11: Python & SQL Integration](#section-11-python--sql-integration)
 
 ---
 
 ## Section 1: Setup & Installation
-* **Goal:** Get PostgreSQL running.
-* Installed PostgreSQL 16.
-* Configured pgAdmin 4.
-* Restored the `dvdrental` database.
+**Goal:** Get PostgreSQL running.
 
-[↑ Back to Top](#sql-study-notes)
+- Installed PostgreSQL 16
+- Configured pgAdmin 4
+- Restored the `dvdrental` database
 
 ---
-Database would be having tables
- ## TABLE in SQL is like a grid
-It has:
 
-Rows → go left to right
+## Understanding Tables in SQL
 
-Columns → go top to bottom
+A **table** in SQL is like a **grid**.
 
-Columns = headings (what kind of information)
+### Rows
+- Go **left to right**
+- Each row = **one complete record**
 
-Columns tell us WHAT type of data we are storing.
+### Columns
+- Go **top to bottom**
+- Each column = **type of data**
 
+### Remember
+- **Column = WHAT**
+- **Row = WHO / WHICH ONE**
 
-Rows = one full entry (one person / one thing)
+### Example: Student Table
 
-Each row is one complete record.
+| Name  | Age | Class |
+|------|-----|-------|
+| Rohan | 10  | 5     |
 
-Very important line (remember this)
+---
 
-Column = WHAT
+## Section 2: Fundamentals (SELECT, WHERE, DISTINCT, ORDER BY, LIMIT, BETWEEN, IN, LIKE, ILIKE)
 
-Row = WHO / WHICH ONE
+### SELECT
+Used to retrieve data from a table.
 
-Table Student
-
-How SQL sees it
-Column = vertical (⬇️)
-Name
-Age
-Class
-
-Row = horizontal (➡️)
-Rohan | 10 | 5
-
-## Section 2: Fundamentals (SELECT, WHERE, ORDER BY , LIMIT,BETWEEN , IN ,LIKE, ILIKE)
-### SELECT Statement
-Retrieves data from a table.
 ```sql
-SELECT coloumn_name
-FROM table_name;
+SELECT *
+FROM customer;
+```
 
---Can select multiple coloums
-select coloumn_1, coloumn_2
-from table_1
-
-Select *
-From table
-
-#### Practice: Marketing Promotion List
-**Business Problem:** Create a list of customers' full names and emails to send promotional messages.
+### Selecting Specific Columns
 ```sql
 SELECT first_name, last_name, email
 FROM customer;
 ```
--- For selecting all the coloumn
+---
+
+### Business Problem 1: Customer Marketing List
+
+**Context:**  
+The marketing team wants to send a promotional email campaign.
+
+**Requirement:**  
+Retrieve the **first name**, **last name**, and **email address** of all customers.
+
+**SQL Solution:**
+
+```sql
+SELECT first_name, last_name, email
+FROM customer;
+```
 
 
 
 
+
+   
