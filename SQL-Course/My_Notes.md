@@ -26,8 +26,42 @@
 
 ---
 
+ ## TABLE in SQL is like a grid
+It has:
+
+Rows → go left to right
+
+Columns → go top to bottom
+
+Columns = headings (what kind of information)
+
+Columns tell us WHAT type of data we are storing.
+
+
+Rows = one full entry (one person / one thing)
+
+Each row is one complete record.
+
+Very important line (remember this)
+
+Column = WHAT
+
+Row = WHO / WHICH ONE
+
+Table Student
+
+How SQL sees it
+Column = vertical (⬇️)
+Name
+Age
+Class
+
+Row = horizontal (➡️)
+Rohan | 10 | 5
+
 ## Section 2: Fundamentals (SELECT, WHERE)
 ### SELECT Statement
 Retrieves data from a table.
 ```sql
-SELECT * FROM actor;
+SELECT coloumn_name
+FROM table_name;
