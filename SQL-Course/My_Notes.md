@@ -73,9 +73,17 @@ FROM table_name;
 select coloumn_1, coloumn_2
 from table_1
 
--- For selecting all the coloumn
-
 Select *
 From table
+
+#### Practice: Marketing Promotion List
+**Business Problem:** Create a list of customers' full names and emails to send promotional messages.
+```sql
+SELECT first_name, last_name, email
+FROM customer;
+
+-- For selecting all the coloumn
+
+
 
 
