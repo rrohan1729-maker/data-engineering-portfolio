@@ -3,7 +3,7 @@
 
 ## 📑 Table of Contents (Index)
 1. [Section 1: Setup & Installation](#section-1-setup--installation)
-2. [Section 2: Fundamentals (SELECT, WHERE)](#section-2-fundamentals-select-where-distinct-order by-limit-between-in-like-inlike)
+2. [Section 2: Fundamentals (SELECT, WHERE)](#section-2-fundamentals-select-where)
 3. [Section 3: Group By & Aggregations](#section-3-group-by--aggregations)
 4. [Section 4: JOINS (Inner, Left, Right, Outer)](#section-4-joins-inner-left-right-outer)
 5. [Section 5: Advanced Commands (Timestamps, Math)](#section-5-advanced-commands-timestamps-math)
