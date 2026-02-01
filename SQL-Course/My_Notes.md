@@ -60,17 +60,22 @@ A **table** in SQL is like a **grid**.
 Used to retrieve data from a table.
 
 ```sql
-SELECT *
-FROM customer;
+SELECT coloumn
+FROM table;
 ```
+---If select all data can use *
 
-### Selecting Specific Columns
 ```sql
-SELECT first_name, last_name, email
-FROM customer;
+Select *
+from table
 ```
----
 
+---We can select multiple coloums also
+
+```sql
+select coloumn_1, coloumn_2, coloumn_3
+from table
+```
 ### Business Problem 1: Customer Marketing List
 
 **Context:**  
